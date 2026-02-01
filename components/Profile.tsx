@@ -27,9 +27,10 @@ const Profile = ({ data, setData }: IProfile) => {
       </div>
 
       <div className="flex items-center gap-2">
-        <label>Email :</label>
+        <label htmlFor="email">Email :</label>
         <input
           type="email"
+          id="email"
           placeholder="Enter email"
           className="border border-black px-2 py-1 rounded-md"
           value={email}
@@ -40,9 +41,10 @@ const Profile = ({ data, setData }: IProfile) => {
       </div>
 
       <div className="flex items-center gap-2">
-        <label>Age :</label>
+        <label htmlFor="age">Age :</label>
         <input
           type="number"
+          id="age"
           placeholder="Enter age"
           className="border border-black px-2 py-1 rounded-md"
           value={age ? age : ""}
