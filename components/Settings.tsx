@@ -20,6 +20,7 @@ const Settings = ({ data, setData }: ISettings) => {
         <div className="flex items-center gap-2" key={index}>
           <input
             type="radio"
+            id={value}
             checked={theme === value}
             className="hover:cursor-pointer"
             onChange={() =>
@@ -29,7 +30,7 @@ const Settings = ({ data, setData }: ISettings) => {
               }))
             }
           />
-          <label>{label}</label>
+          <label htmlFor={value}>{label}</label>
         </div>
       ))}
     </div>
